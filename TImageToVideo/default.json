@@ -1,0 +1,7 @@
+{
+	"Fps":	1,
+	"Fourcc":	6,
+	"TargetSuffix":	".jpg",
+	"OutFile":	"default.mp4",
+	"ResolutionRatio":	"1920*1080"
+}

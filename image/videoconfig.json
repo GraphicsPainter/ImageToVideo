@@ -1,0 +1,18 @@
+{
+	"Fps":	1,
+	"Fourcc":	6,
+	"TargetSuffix":	".jpg",
+	"AutoStretch":	2,
+	"ResolutionRatio":	"500*500",
+	"PKGFormat":	".mp4",
+	"OutPath":	"",
+	"Parameter_Explain":	{
+		"Fps":	"帧率",
+		"Fourcc":	"视频编码格式,1:MPEG_1;2:JPEG;3:MPEG_4_2;4:MPEG_4_3;5:MPEG_4;6:H263;7:H263I;8:FLV1",
+		"TargetSuffix":	"目标图片后缀",
+		"AutoStretch":	"0:默认按照第一张图片拉伸,1:按照参数ResolutionRatio拉伸,2:不改变图片比例以黑色背景进行填充",
+		"ResolutionRatio":	"生成视频帧的宽*高",
+		"PKGFormat":	"输出视频封装格式.mp4;.avi;.mkv",
+		"OutPath":	"输出路径"
+	}
+}
