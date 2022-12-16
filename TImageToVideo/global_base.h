@@ -96,9 +96,9 @@ struct VideoFormat {
 	int ifourcc;//编码格式
 	int iwidth;//分辨率，宽
 	int iheigh;//分辨率，高
-	int isuffix;//目标文件后缀
 	int iautoStretch;//启用缩放
 	int ipkgmdel;//视频封装格式,.mp4,.avi...
+	char c_suffix[8];//目标文件后缀
 };
 
 

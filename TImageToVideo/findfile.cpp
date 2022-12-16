@@ -151,26 +151,7 @@ bool ReadConfigFile(const char* filename, VideoFormat& _videoformat, std::string
 		cJSON* Suffix = cJSON_GetObjectItem(root, "TargetSuffix");//目标后缀
 		if (cJSON_IsString(Suffix))
 		{
-			std::string suf = Suffix->valuestring;
-			if (_strnicmp(suf.c_str(), ".png", 4) == 0)
-			{
-				_videoformat.isuffix = P_PNG;
-			}
-			else if (_strnicmp(suf.c_str(), ".jpg", 4) == 0)
-			{
-				_videoformat.isuffix = P_JPG;
-			}
-			else if (_strnicmp(suf.c_str(), ".jpeg", 5) == 0)
-			{
-				_videoformat.isuffix = P_JPEG;
-			}
-			else if (_strnicmp(suf.c_str(), ".bmp", 4) == 0)
-			{
-				_videoformat.isuffix = P_BMP;
-			}
-			else {
-				_videoformat.isuffix = P_PNG;
-			}
+			sprintf_s(_videoformat.c_suffix, 8, "%s", Suffix->valuestring);
 		}
 		
 		cJSON* PATH = cJSON_GetObjectItem(root, "OutFile");//输出路径

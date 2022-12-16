@@ -37,8 +37,7 @@ int main(int argc, char *argv[])
 				return 0;
 			}
 
-			std::string suffix = GetPICSuffix(format.isuffix);
-			FindformatFile(indir.c_str(), suffix.c_str(), vec_imagelist);
+			FindformatFile(indir.c_str(), format.c_suffix, vec_imagelist);
 			if (vec_imagelist.size() > 0)
 			{
 				std::vector<std::string> imgfilelist;
